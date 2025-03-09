@@ -14,7 +14,7 @@ export default function HomeScreen() {
         style={styles.container}>
 
 
-      <View>
+      <View style={styles.location}>
         <Location/>
         <DateTimeDisplay />
       </View>  
@@ -26,8 +26,12 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     flex: 1,
+    alignItems: 'center',
+        
+  },
+  location: {
     justifyContent: 'center',
     alignItems: 'center',
-    
+    marginTop: 40,
   },
 });

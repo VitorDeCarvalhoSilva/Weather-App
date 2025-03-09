@@ -24,11 +24,24 @@ export default function DateTimeDisplay() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{formattedDateTime}</Text>
+      <Text style={styles.text}>{formattedDateTime.toUpperCase()}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
+    height: 20,
+  },
+  text: {
+    color: '#fff',
+    fontSize: 16,
+    fontFamily: 'Poppins_300Light',
+    letterSpacing: .5,
+    height: 20,
+  },
 });
